@@ -4,10 +4,6 @@ function classifyConsumption() {
 
     let error = document.getElementById("error");
 
-    // clear error first
-    error.innerHTML = "";
-
-    // error condition
     if (kwh < 0 || isNaN(kwh)) {
         error.innerHTML = "Please input a non-negative number.";
         return;
